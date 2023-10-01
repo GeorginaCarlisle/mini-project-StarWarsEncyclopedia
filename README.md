@@ -39,6 +39,28 @@ Link to live page: This aaplication is currently under construction.
 
 ## User Stories
 
+As a new user I can clearly see the application name/logo and an introduction to the application, so that I instantly understand the purpose of this application and what it has to offer me.
+
+As a user I can see the website's logo and links at the top of the page, so that I can navigate quickly and easily to the information I want.
+
+As a user I can visit a page dedicated to the Star Wars films, so that I can learn about the Star Wars films.
+
+As a user I can visit a page dedicated to the Star Wars planets, so that I can learn about the Star Wars planets.
+
+As a user I can visit a page dedicated to the Star Wars starships, so that I can learn about the Star Wars starships.
+
+As a user I can visit a page dedicated to the Star Wars vehicles, so that I can learn about the Star Wars vehicles.
+
+As a user I can visit a page dedicated to the Star Wars species, so that I can learn about the Star Wars species.
+
+As a user I can visit a page dedicated to the Star Wars people, so that I can learn about the Star Wars people.
+
+As a user I can search using a specific term or name, so that I can quickly locate the information I want.
+
+As a user I can contact the website owner, so that I can offer feedback about my experience using the application.
+
+As a user I can clearly see who created the website and when, so that I can judge how update and accurate the information may be.
+
 [Return to contents list](#contents)
 
 ## Design
