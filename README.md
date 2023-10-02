@@ -93,6 +93,8 @@ As a user I can clearly see who created the website and when, so that I can judg
 
 ## Credits
 
+ main-background.jpg by  Felix Mittermeier https://www.pexels.com/photo/blue-universe-956981/
+
 [Return to contents list](#contents)
 
 ## Acknowledgements

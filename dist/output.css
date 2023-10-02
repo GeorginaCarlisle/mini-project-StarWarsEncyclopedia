@@ -574,6 +574,14 @@ video {
   display: none;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
 .w-full {
   width: 100%;
 }
@@ -604,6 +612,14 @@ video {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
 }
 
 .p-1 {
