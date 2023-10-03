@@ -85,24 +85,19 @@ function displayFilmData(data) {
     console.log(data);
     const numberItems = data.length;
     console.log(numberItems);
+    let filmData = ``;
     for (let i = 0; i < numberItems; i++) {
-        let film = data[i];
+        const film = data[i];
         console.log(film);
-        // Add title to DOM
-        title = document.getElementById(`title-${i}`);
-        title.innerHTML = film.title;
-        // Add episode number to DOM
-        episode = document.getElementById(`episode-${i}`);
-        episode.innerHTML = film.episode_id;
-        // Add opening crawl to DOM
-        opening = document.getElementById(`opening-${i}`);
-        opening.innerHTML = film.opening_crawl;
-        // Add created to DOM
-        created = document.getElementById(`created-${i}`);
-        created.innerHTML = film.created;
+        // build film data
+        const filmData = `
+            <div class="bg-slate-900 p-3 mt-10 mx-8 rounded sm:mx-16 md:mx-8">
+                <h2 class="text-center text-red-500 text-2xl font-bold mb-4">${film.title}</h2>
+                <p class="mb-4"><span class="font-bold mr-3">Episode:</span><span>${film.episode_id}</span></p>
+                <p class="mb-4"><span class="font-bold mr-3">Opening crawl:</span><span>${film.opening_crawl}</span></p>
+            </div>
+        `;
+        // Add film data into the DOM
+        infoContainer.insertAdjacentHTML("beforeend", filmData);
     }
 }
-
-
-
-
