@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find out about all things Star Wars: Films, Starships, Planets, Species, Vehicles and People">
+    <meta name="keywords" content="star wars">
+
+    <!-- Link to css styling sheet -->
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <title>About the Star Wars Encyclopedia</title>
+</head>
+<body>
+    <main class="bg-fixed bg-cover w-full h-screen z-1 pt-4" style="background-image: url(assets/images/main-background.jpg)">    
+        
+        <div class="bg-slate-900 p-1 text-center my-10">
+            <h1 class="text-amber-300 text-xl">About the <span class="text-2xl font-bold">Star Wars</span> <br> Encyclopedia</h1>
+        </div> 
+
+        <div class="text-slate-200 bg-slate-900 text-lg p-2 text-center">   
+                <p class="mb-2">This website was created by Georgina Carlisle for educational purposes only</p>      
+        </div>
+
+        <div class="flex justify-between w-40 mx-auto text-black text-2xl my-10">
+            <button class="bg-amber-400 p-2 rounded-md">
+                <a href="https://github.com/GeorginaCarlisle" target="_blank" class="hover:text-red-700"
+                    rel="noopener" aria-label="Visit my GitHub profile (opens in a new tab)">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </button>
+            <button class="bg-amber-400 p-2 rounded-md">
+                <a href="https://www.linkedin.com/in/georgina-carlisle-617b58268" target="_blank" class="hover:text-red-700"
+                    rel="noopener" aria-label="Visit my linkedin profile (opens in a new tab)">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </button>
+        </div>
+        <div class="text-slate-200 bg-slate-900 text-lg p-2 text-center">
+            <p>The Star Wars facts displayed on this website are from:<br> 
+                <a href="https://ci-swapi.herokuapp.com/" class="text-red-600 hover:text-amber-400">
+                    SWAPI - The Star Wars API created by Code Institute
+                </a>
+            </p>
+        </div>
+    </main>
+    <footer class="py-2 px-6 z-2 bg-black sticky bottom-0 text-xl">
+        <!-- Footer content to be display at mobile level -->
+        <div id="mobile-footer" class=" w-full">
+            <ul class="grid grid-cols-3 text-slate-300 text-center">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>       
+    </footer>
+
+    <!-- Script for fontawesome icons, copied from https://fontawesome.com/ -->
+    <script src="https://kit.fontawesome.com/ab3127d928.js" crossorigin="anonymous"></script>
+
+    <!-- Link to the JavaScript file -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
