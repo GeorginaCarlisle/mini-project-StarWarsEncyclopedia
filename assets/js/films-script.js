@@ -16,6 +16,7 @@ async function getFilmData() {
     const data = await response.json();
 
     if (response.ok) {
+        closeLoadingMessage();
         displayFilmData(data.results);
         console.log(data);
     } else {
@@ -44,7 +45,20 @@ function loadingMessage() {
 }
 
 /**
+ * Called once connection to SWAPI confirmed
+ * Re-hides message container
+ */
+function closeLoadingMessage() {
+    // Locate items in the DOM to be altered
+    messageContainer = document.getElementById("message-container");
+    // Hide message container
+    messageContainer.style = "display:hidden";
+}
+
+
+/**
  * Called if error is received when connecting to API
+ * Displays message to DOM
  */
 function displayErrorMessage(data) {
     // Locate items in the DOM to be altered
@@ -60,30 +74,33 @@ function displayErrorMessage(data) {
 
 /**
  * Called once API has been successfully contected too
+ * Displays a selection of film data from API into the DOM
  */
 function displayFilmData(data) {
-    // Locate items in the DOM to be altered
-    messageContainer = document.getElementById("message-container");
-    heading = document.getElementById("message-heading");
-    contents = document.getElementById("message-contents");
-    // Display message container
-    messageContainer.style = "display:block";
-    // Add heading and message
-    
-    console.log(data);
+    // Display info container
+    infoContainer = document.getElementById("film-info");
+    infoContainer.style = "display:block";
 
+    // Iterate through the array adding data into the DOM
+    console.log(data);
     const numberItems = data.length;
     console.log(numberItems);
     for (let i = 0; i < numberItems; i++) {
-        let planetDictionary = data[i];
-        console.log(planetDictionary);
-        heading.innerHTML = planetDictionary.title;
+        let film = data[i];
+        console.log(film);
+        // Add title to DOM
+        title = document.getElementById(`title-${i}`);
+        title.innerHTML = film.title;
+        // Add episode number to DOM
+        episode = document.getElementById(`episode-${i}`);
+        episode.innerHTML = film.episode_id;
+        // Add opening crawl to DOM
+        opening = document.getElementById(`opening-${i}`);
+        opening.innerHTML = film.opening_crawl;
+        // Add created to DOM
+        created = document.getElementById(`created-${i}`);
+        created.innerHTML = film.created;
     }
-
-
-    
-    
-    contents.innerHTML = data;
 }
 
 
