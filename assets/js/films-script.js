@@ -16,7 +16,8 @@ async function getFilmData() {
     const data = await response.json();
 
     if (response.ok) {
-        displayFilmData(data);
+        displayFilmData(data.results);
+        console.log(data);
     } else {
         displayErrorMessage(data);
         throw new Error(data.error);
@@ -43,6 +44,21 @@ function loadingMessage() {
 }
 
 /**
+ * Called if error is received when connecting to API
+ */
+function displayErrorMessage(data) {
+    // Locate items in the DOM to be altered
+    messageContainer = document.getElementById("message-container");
+    heading = document.getElementById("message-heading");
+    contents = document.getElementById("message-contents");
+    // Display message container
+    messageContainer.style = "display:block";
+    // Add heading and message
+    heading.innerHTML = "More work to be done";
+    contents.innerHTML = "failed to connect to the API you have";
+}
+
+/**
  * Called once API has been successfully contected too
  */
 function displayFilmData(data) {
@@ -53,23 +69,23 @@ function displayFilmData(data) {
     // Display message container
     messageContainer.style = "display:block";
     // Add heading and message
-    heading.innerHTML = "Time to celebrate";
-    contents.innerHTML = "correctly connected to the API you are";
+    
+    console.log(data);
+
+    const numberItems = data.length;
+    console.log(numberItems);
+    for (let i = 0; i < numberItems; i++) {
+        let planetDictionary = data[i];
+        console.log(planetDictionary);
+        heading.innerHTML = planetDictionary.title;
+    }
+
+
+    
+    
+    contents.innerHTML = data;
 }
 
-/**
- * Called if error is received when connecting to API
- */
-function displayErrorMessage(data) {
-        // Locate items in the DOM to be altered
-        messageContainer = document.getElementById("message-container");
-        heading = document.getElementById("message-heading");
-        contents = document.getElementById("message-contents");
-        // Display message container
-        messageContainer.style = "display:block";
-        // Add heading and message
-        heading.innerHTML = "More work to be done";
-        contents.innerHTML = "failed to connect to the API you have";
-}
+
 
 
