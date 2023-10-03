@@ -69,26 +69,35 @@
             </ul>
         </div>
         <!-- Footer content to be display at desktop level -->
-        <div id="desktop-footer" class="hidden md:grid grid-cols-5">
-            <div class="col-span-4">
-                <p class="text-slate-300">Created by Georgina Carlisle for educational purposes only 2023</p>
-            </div>
-            <div class="col-span-1">
-                <ul class="text-red-500 flex justify-between px-8 text-2xl">
-                    <li>
-                        <a href="https://github.com/GeorginaCarlisle" target="_blank" class="hover:text-yellow-400"
-                        rel="noopener" aria-label="Visit my GitHub profile (opens in a new tab)">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/georgina-carlisle-617b58268" target="_blank" class="hover:text-yellow-400"
-                        rel="noopener" aria-label="Visit my linkedin profile (opens in a new tab)">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div id="desktop-footer" class="hidden md:grid grid-rows-2 lg:px-32 xl:flex xl:justify-between xl:px-2">
+
+            <!-- Top line of info - about developer -->
+                <div class="flex">
+                    <p class="text-slate-300">Created by Georgina Carlisle for educational purposes only 2023</p>
+                    <ul class="text-red-500 flex justify-start text-2xl">
+                        <li class="ml-8 xl:ml-4">
+                            <a href="https://github.com/GeorginaCarlisle" target="_blank" class="hover:text-yellow-400"
+                            rel="noopener" aria-label="Visit my GitHub profile (opens in a new tab)">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="ml-8 xl:ml-4">
+                            <a href="https://www.linkedin.com/in/georgina-carlisle-617b58268" target="_blank" class="hover:text-yellow-400"
+                            rel="noopener" aria-label="Visit my linkedin profile (opens in a new tab)">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            <!-- Bottom line of info - about SWAPI -->
+                <div class="flex justify-end">
+                    <a href="https://ci-swapi.herokuapp.com/" target="_blank" class="text-red-700 hover:text-yellow-400 text-right mr-4"
+                        rel="noopener" aria-label="Visit SWAPI the star wars API (opens in a new tab)">
+                        SWAPI
+                    </a>
+                    <p class="text-slate-300">The Star Wars API has been used to generate all facts</p>
+                </div>
         </div>
     </footer>
 
