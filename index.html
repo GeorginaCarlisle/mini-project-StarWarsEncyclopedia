@@ -12,8 +12,8 @@
     <title>The Star Wars Encyclopedia</title>
 </head>
 <body>
-    <header class="fixed flex justify-center sm:grid sm:grid-cols-3 w-full py-2 px-6 z-2 bg-black">
-        <div id="logo" class="sm:col-span-1 text-red-500 hover:text-yellow-400 font-extrabold">
+    <header class="hidden fixed md:grid md:grid-cols-3 w-full py-2 px-6 z-2 bg-black">
+        <div id="logo" class="col-span-1 text-red-500 hover:text-yellow-400 font-extrabold">
             <a href="index.html">
                 <div class="grid grid-rows-2 w-30 justify-start text-xl sm:text-lg">
                     <span class="text-center">Star Wars</span>
@@ -21,13 +21,13 @@
                 </div>
             </a>
         </div>
-        <div class=" hidden sm:block sm:col-span-2">
+        <div class="col-span-2">
             <nav>
-                <ul class="flex justify-end text-lg md:text-xl text-slate-100 leading-10 mt-2 md:mt-4">
-                    <li class="ml-8 md:ml-16 hover:text-red-500">
+                <ul class="flex justify-end text-xl text-slate-100 leading-10 mt-4">
+                    <li class="ml-16 text-slate-400 hover:text-red-500">
                         <a href="index.html" aria-current="page">Home</a>
                     </li>
-                    <li class="ml-8 md:ml-16 hover:text-red-500">
+                    <li class="ml-16 hover:text-red-500">
                         <a href="films.html">Films</a>
                     </li>
                 </ul>
