@@ -79,7 +79,7 @@ function displayErrorMessage(data) {
 function displayFilmData(data) {
     // Display info container
     infoContainer = document.getElementById("film-info");
-    infoContainer.style = "display:block";
+    infoContainer.style = "display:grid";
 
     // Iterate through the array adding data into the DOM
     console.log(data);
