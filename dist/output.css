@@ -1017,6 +1017,11 @@ video {
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 
+.text-slate-300 {
+  --tw-text-opacity: 1;
+  color: rgb(203 213 225 / var(--tw-text-opacity));
+}
+
 .opacity-80 {
   opacity: 0.8;
 }
@@ -1142,6 +1147,10 @@ video {
     margin-top: 1rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:inline {
     display: inline;
   }
@@ -1152,6 +1161,10 @@ video {
 
   .md\:grid {
     display: grid;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:grid-cols-3 {
